@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #585CE4;
+    font-family: 'Poppins', sans-serif;   
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+}
+
+.container{
+    display: block;
+    margin: auto;
+    width: 100%;
+    min-width: 280px;
+    max-width: 480px;
+    background-color: #fefeff;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 100px;
+    box-shadow: 0 15px 150px rgb(0 0 0 / 15%);
+}
+
+header{
+    background-color: #FBFBFF;
+    height: 130px;
+    width: 100%;
+    padding: 26px;
+}
+
+
+.tasks-clear{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.data-semana {
+    color: #666AFB;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.month {
+    color: #AFA9CA;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tasks {
+    font-size: 16px;
+    color: #AFA9CA;
+    font-weight: 500;
+}
+
+.clear {
+    background-color: #FB6F70;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+   font-size: 12px;
+   border: none;
+   border-radius: 3px;
+   padding: 6px;
+}
+
+.type-task{
+   border-top: 1px solid #e5e3f1;
+   border-bottom: 1px solid #e5e3f1;
+   padding: 26px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.add {
+    border: none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background-color: #FB6F70;
+    border-radius: 50%;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+button:hover{
+    background-color: #76cb5a;
+}
+
+#task-text{
+    border: none;
+    font-size: 20px;
+    padding: 6px;
+    color: #7d7e96;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #AFA9CA;
+    opacity: 1; /* Firefox */
+  }
+
+  *:focus {
+    outline: none;
+}
+
+footer{
+    display: block;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    color: #a8a9ca;
+    letter-spacing: 0.4;
+    background-color: #fefeff;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+a {
+    color: #FB6F70;
+    text-decoration: none;
+}
+
+a {
+    background:
+      linear-gradient(
+        to right,
+        rgba(100, 200, 200, 1),
+        rgba(100, 200, 200, 1)
+      ),
+      linear-gradient(
+        to right,
+        #d04b36,
+        #e36511,
+        #ffba00,
+        #00b180,
+        #147aab,
+        #675997
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+
+  a:hover {
+    background-size: 0 3px, 100% 3px;
+  }
+
+  .todo {
+    background-color: #Fff;
+    width: 100%;
+    height: 85px;
+    padding: 26px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .task-input {
+    border: none;
+    font-size: 16px;
+    padding: 6px;
+    width: 100%;
+  }
+
+  #check{
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 2px;
+  }
+
+  .greeting {
+    color: #e5e3f1;
+  }
+
+  .greet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .fa-trash,
+.fa-check{
+    pointer-events: none;
+}
+
+  .complete_btn,
+  .delete_btn{
+    padding: 0.5rem;
+    background: #FB6F70;
+    color: white;
+    border: none;
+    margin-left: 0.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.complete_btn{
+  background: rgb(67, 179, 67);
+}
+.complete_btn:active{
+  background: green;
+}
+
+.delete_btn:active{
+  background: #b65337;
+}
+
+.taskInput{
+  border: none;
+  width: 100%;
+  padding: 6px;
+  font-size: 20px;
+  color: #7d7e96;
+}
+
+/* STYLING TASK THAT IS COMPLETED */
+.completedItem{
+  text-decoration: line-through;
+  opacity: 0.5;
+  transform: scale(0.96);
+}
+/* DELETING THE TASKS */
+.fall{
+  transform: translateY(4rem) scale(0.4) rotateZ(20deg);
+  opacity: 0;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+    <title>Todo</title>
+</head>
+<body>
+    <div class="greet">
+        <h1 class="greeting" id="greeting"></h1>
+    </div>
+    <div class="container">
+        <header class="header">
+                <div class="data">
+                    <h2 class="data-semana" id="dia">Tuesday</h2>
+                    <span class="tasks">4 Tasks</span>
+                </div>           
+                <div class="tasks-clear">               
+                    <span class="month" id="mes">April</span>
+                <button class="clear" id="clear">clear list</button>
+                </div>                  
+        </header>
+        <div class="type-task">      
+                <input placeholder="Type your task" type="text" id="task-text" name="task"/>
+                <button class="add" id="add-button">
+                    <i class='bx bx-plus'></i>
+                </button>
+        </div>
+    
+        <div class="tasks-container" id="box-tasks">
+            <!-- <div class="task">
+                <input type = "checkbox" id = "check-task" name = "subscribe" value = "check-task">
+            </div> -->
+    
+        </div>
+    
+        <footer>
+            <span class="foot-text">Made by <a class="footer-link" target="_blank" href="https://github.com/lrnholanda">Lorena</a></span>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
